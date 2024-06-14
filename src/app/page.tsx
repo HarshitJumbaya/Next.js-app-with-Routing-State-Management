@@ -26,7 +26,7 @@ export default function Home() {
 
 
       <div>
-      <button className="bg-pink-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => router.push("shadcn")}>SHADCN UI component</button>
+      <button className="bg-pink-500 hover:bg-pink-800 text-white font-bold py-2 px-4 rounded" onClick={() => router.push("shadcn")}>SHADCN UI component</button>
 
       </div>
     </main>

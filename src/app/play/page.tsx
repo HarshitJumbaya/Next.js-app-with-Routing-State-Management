@@ -13,14 +13,17 @@ const Play = () => {
 
   return (
     <div>
-    <h1>Counter Page</h1>
-      <p>Count: {count}</p>
-      <button onClick={() => dispatch(increment())}>Increment</button>
-      <button onClick={() => dispatch(decrement())}>Decrement</button>
+    <h1 className="text-3xl font-bold text-blue-600 mb-4">Counter Page</h1>
+      <p className="text-gray-600 font-semibold underline hover:underline">Count: {count}</p>
+      <br />
+      <button className="bg-pink-500 hover:bg-pink-800 text-white font-bold mx-4 py-2 px-4 rounded" onClick={() => dispatch(increment())}>Increment</button>
+      <button className="bg-pink-500 hover:bg-pink-800 text-white font-bold py-2 px-4 rounded"  onClick={() => dispatch(decrement())}>Decrement</button>
+      
       <nav>
+        <br />
         <ul>
           <li>
-            <Link href="/">Home</Link>
+            <Link className="text-green-600 font-semibold underline hover:underline" href="/">Home</Link>
           </li>
         </ul>
       </nav>
