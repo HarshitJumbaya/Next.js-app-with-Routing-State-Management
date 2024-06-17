@@ -4,7 +4,9 @@ export default defineConfig({
     test: {
         includeSource: ["src/**/*.{js,ts}"],
         coverage: {
-            reporter: ["text", "html"]
+            provider: 'istanbul',
+            reporter: ["text", "html"],
+            reportsDirectory: './coverage',
         }
     }
 })

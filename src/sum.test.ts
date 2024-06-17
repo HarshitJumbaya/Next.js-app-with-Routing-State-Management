@@ -14,4 +14,24 @@ describe("#sum", ()=> {
     it("return the sum of all the numbers provided", ()=> {
         expect(sum(1,2,3)).toBe(6)
     })
+
+    it("returns concatenation of all the strings", () => {
+        expect(sum('a', 'b', 'c')).toBe('abc');
+    })
+
+    it("error when mixing strings and numbers", () => {
+        expect(() => sum(1, 'b', 3)).toThrow('Cannot process a mix of strings and numbers.');
+    })
+
+    it("returns 0 with empty string input", () => {
+        expect(sum('')).toBe('');
+    })
+
+    it("returns concatenated string with one string input", () => {
+        expect(sum('test')).toBe('test');
+    })
+
+    it("returns concatenated string with multiple string inputs", () => {
+        expect(sum('hello', ' ', 'world')).toBe('hello world');
+    })
 })
